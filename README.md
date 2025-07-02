@@ -13,7 +13,7 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 ## Passos para subir o projeto
 
 1. **Faça o download do repositório:**
-   [Clique aqui para realizar o download](https://github.com/guilhermeonrails/imersao-devops/archive/refs/heads/main.zip)
+   [Clique aqui para realizar o download](https://github.com/selmin01/CloudPilot/archive/refs/heads/main.zip)
 
 2. **Crie um ambiente virtual:**
    ```sh
@@ -64,3 +64,13 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 - Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
 
 ---
+
+## Gerar build no docker
+docker build -t api .
+
+## Rodar build no docker
+docker run -p 8000:8000 api
+
+
+## interesante
+https://huggingface.co/spaces/openfree/image-to-vector
