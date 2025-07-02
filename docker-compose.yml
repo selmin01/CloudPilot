@@ -1,0 +1,16 @@
+services:
+  app:
+    # Constrói a imagem a partir do Dockerfile no diretório atual
+    build: .
+    # Nomeia o container para fácil identificação
+    container_name: fastapi_escola_api
+    # Mapeia a porta 8000 do host para a porta 8000 do container
+    ports:
+      - "8000:8000"
+    # Mapeia o diretório atual para o diretório /app dentro do container
+    # Isso tem dois benefícios principais:
+    # 1. O arquivo do banco de dados (escola.db) será criado e persistido no seu diretório local.
+    # 2. Quaisquer alterações no código-fonte serão refletidas imediatamente dentro do container,
+    #    o que é ideal para desenvolvimento com o 'uvicorn --reload'.
+    volumes:
+      - .:/app
