@@ -64,13 +64,15 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 - Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
 
 ---
-
+s
 ## Gerar build no docker
 docker build -t api .
 
 ## Rodar build no docker
 docker run -p 8000:8000 api
 
+
+gcloud config set project teste-clound-pilot
 
 ## interesante
 https://huggingface.co/spaces/openfree/image-to-vector
